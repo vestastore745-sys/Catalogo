@@ -1,0 +1,19 @@
+<style>@import "style.css";</style>
+
+<div class="catalogo-container">
+  <h1>Catálogo de Productos</h1>
+  ...
+  <!-- Filtros y Búsqueda -->
+  <div class="controles">
+    <input type="text" id="inputBuscar" placeholder="Buscar producto..." onkeyup="filtrarProductos()">
+    <select id="selectCategoria" onchange="filtrarProductos()">
+      <option value="todos">Todas las categorías</option>
+      <option value="Cortes">Cortes & Estilos</option>
+      <option value="Accesorios">Accesorios</option>
+    </select>
+  </div>
+
+  <!-- Cuadrícula donde se cargarán los productos -->
+  <div id="gridProductos" class="grid-productos"></div>
+</div>
+<script src="script.js"></script>
